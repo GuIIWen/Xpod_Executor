@@ -1,0 +1,100 @@
+# ----------------------------------------------------
+# 1. Python 环境和编译文件
+# ----------------------------------------------------
+# Python 字节码文件
+__pycache__/
+*.pyc
+*.pyd
+*.so
+
+# 虚拟环境目录 (venv, env, .venv 是最常见的命名)
+/venv/
+/env/
+/.venv/
+/build/
+/dist/
+
+# Setuptools / Wheel 文件
+*.egg-info/
+.eggs/
+
+# 单元测试和覆盖率
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+
+# Jupter / IPython Checkpoints
+.ipynb_checkpoints/
+
+# Python 包管理日志
+pip-log.txt
+
+# ----------------------------------------------------
+# 2. 通用系统和日志文件
+# ----------------------------------------------------
+# 日志和调试文件
+*.log
+*.tmp
+*.bak
+log/
+logs/
+
+# 数据库文件 (根据需要，如果使用 SQLite)
+*.sqlite3
+*.db
+/data/*.sqlite3
+
+# 操作系统临时文件
+*~
+*.swp
+*.swo
+.DS_Store # macOS
+Thumbs.db # Windows
+.Trashes # macOS
+
+# ----------------------------------------------------
+# 3. IDE / 编辑器配置
+# ----------------------------------------------------
+# JetBrains IDEs (PyCharm, IntelliJ, WebStorm)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Visual Studio Code
+.vscode/*
+# 保留可能需要团队共享的配置（如启动配置或任务）
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+# Vim / Emacs
+#*#
+.fuse_hidden*
+
+# ----------------------------------------------------
+# 4. Web 框架特定文件 (如果适用，例如 Django / Flask)
+# ----------------------------------------------------
+# Django
+/media/
+/static_collected/
+
+# Flask / 其他框架
+instance/
+
+# ----------------------------------------------------
+# 5. 模型和大型数据文件 (如果您正在处理机器学习项目)
+# ----------------------------------------------------
+# 模型权重文件
+*.pth
+*.pt
+*.h5
+*.onnx
+
+# 大型数据集（通常不提交到 Git）
+*.csv
+*.zip
+*.tar.gz

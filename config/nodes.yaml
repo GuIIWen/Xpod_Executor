@@ -1,0 +1,199 @@
+# 节点配置文件
+nodes:
+  - id: 0
+    ip: "192.168.0.227"
+    name: "node-0"
+    enabled: true
+  - id: 1
+    ip: "192.168.0.7"
+    name: "node-1"
+    enabled: true
+  - id: 2
+    ip: "192.168.0.159"
+    name: "node-2"
+    enabled: true
+  - id: 3
+    ip: "192.168.0.231"
+    name: "node-3"
+    enabled: true
+  - id: 4
+    ip: "192.168.0.27"
+    name: "node-4"
+    enabled: true
+  - id: 5
+    ip: "192.168.0.160"
+    name: "node-5"
+    enabled: true
+  - id: 6
+    ip: "192.168.0.24"
+    name: "node-6"
+    enabled: true
+  - id: 7
+    ip: "192.168.0.30"
+    name: "node-7"
+    enabled: true
+  - id: 8
+    ip: "192.168.0.41"
+    name: "node-8"
+    enabled: true
+  - id: 9
+    ip: "192.168.0.131"
+    name: "node-9"
+    enabled: true
+  - id: 10
+    ip: "192.168.0.149"
+    name: "node-10"
+    enabled: true
+  - id: 11
+    ip: "192.168.0.35"
+    name: "node-11"
+    enabled: true
+  - id: 12
+    ip: "192.168.0.153"
+    name: "node-12"
+    enabled: true
+  - id: 13
+    ip: "192.168.0.225"
+    name: "node-13"
+    enabled: true
+  - id: 14
+    ip: "192.168.0.7"
+    name: "node-14"
+    enabled: true
+  - id: 15
+    ip: "192.168.0.93"
+    name: "node-15"
+    enabled: true
+  - id: 16
+    ip: "192.168.0.164"
+    name: "node-16"
+    enabled: true
+  - id: 17
+    ip: "192.168.0.18"
+    name: "node-17"
+    enabled: true
+  - id: 18
+    ip: "192.168.0.15"
+    name: "node-18"
+    enabled: true
+  - id: 19
+    ip: "192.168.0.66"
+    name: "node-19"
+    enabled: true
+  - id: 20
+    ip: "192.168.0.91"
+    name: "node-20"
+    enabled: true
+  - id: 21
+    ip: "192.168.0.129"
+    name: "node-21"
+    enabled: true
+  - id: 22
+    ip: "192.168.0.13"
+    name: "node-22"
+    enabled: true
+  - id: 23
+    ip: "192.168.0.79"
+    name: "node-23"
+    enabled: true
+  - id: 24
+    ip: "192.168.0.89"
+    name: "node-24"
+    enabled: true
+  - id: 25
+    ip: "192.168.0.119"
+    name: "node-25"
+    enabled: true
+  - id: 26
+    ip: "192.168.0.74"
+    name: "node-26"
+    enabled: true
+  - id: 27
+    ip: "192.168.0.180"
+    name: "node-27"
+    enabled: true
+  - id: 28
+    ip: "192.168.0.78"
+    name: "node-28"
+    enabled: true
+  - id: 29
+    ip: "192.168.0.166"
+    name: "node-29"
+    enabled: true
+  - id: 30
+    ip: "192.168.0.81"
+    name: "node-30"
+    enabled: true
+  - id: 31
+    ip: "192.168.0.39"
+    name: "node-31"
+    enabled: true
+  - id: 32
+    ip: "192.168.0.10"
+    name: "node-32"
+    enabled: true
+  - id: 33
+    ip: "192.168.0.186"
+    name: "node-33"
+    enabled: true
+  - id: 34
+    ip: "192.168.0.100"
+    name: "node-34"
+    enabled: true
+  - id: 35
+    ip: "192.168.0.9"
+    name: "node-35"
+    enabled: true
+  - id: 36
+    ip: "192.168.0.7"
+    name: "node-36"
+    enabled: true
+  - id: 37
+    ip: "192.168.0.102"
+    name: "node-37"
+    enabled: true
+  - id: 38
+    ip: "192.168.0.95"
+    name: "node-38"
+    enabled: true
+  - id: 39
+    ip: "192.168.0.92"
+    name: "node-39"
+    enabled: true
+  - id: 40
+    ip: "192.168.0.88"
+    name: "node-40"
+    enabled: true
+  - id: 41
+    ip: "192.168.0.169"
+    name: "node-41"
+    enabled: true
+  - id: 42
+    ip: "192.168.0.77"
+    name: "node-42"
+    enabled: true
+  - id: 43
+    ip: "192.168.0.152"
+    name: "node-43"
+    enabled: true
+
+# SSH连接配置
+ssh:
+  username: "root"  # 默认用户名
+  port: 22
+  timeout: 30
+  key_file: "~/.ssh/id_rsa"  # SSH私钥文件路径（免密登录）
+  password: null # 使用密钥认证时不需要密码
+  
+# 执行配置
+execution:
+  max_concurrent: 100  # 最大并发连接数
+  retry_count: 3      # 重试次数
+  retry_delay: 5      # 重试间隔(秒)
+  command_timeout: 300 # 命令执行超时(秒)
+  
+# 日志配置
+logging:
+  level: "INFO"
+  file: "logs/execution.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s" 
