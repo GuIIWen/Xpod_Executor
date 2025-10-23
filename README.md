@@ -71,8 +71,6 @@ python main.py exec "df -h" --nodes 0,1,2
 ### 批量执行脚本
 
 ```bash
-python main.py run-script "./test.sh" --nodes all
-
 # 运行exec命令，前置需要多机挂载同一块nfs硬盘
 ```python
 python main.py exec "python /mnt/xxx/test.py" --nodes all
